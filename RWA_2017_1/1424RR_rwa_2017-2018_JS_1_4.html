@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1424/RR</title>
+</head>
+<body>
+<h1>Cetvrti zadatak</h1>
+<script>
+
+	var br1 = parseInt(prompt("Unesite prvi broj:"));
+	var br2 = parseInt(prompt("Unesite drugi broj:"));
+
+	if(!isNaN(br1) && !isNaN(br2)){
+		prosjek(br1, br2);
+	} else {
+		alert("Pogresan unos!");
+	}
+	
+
+	function prosjek(i, j){
+		var zbroj = i + j;
+		var prosjek = zbroj / 2;
+		document.write("Aritmeticka sredina je brojeva " + i + " i " + j + " je: " + prosjek);
+	}
+
+</script>
+</body>
+</html>
